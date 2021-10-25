@@ -1209,6 +1209,9 @@ public final class MediaItem implements Bundleable {
   /** Identifies the media item. */
   public final String mediaId;
 
+  /** Potential custom start time injected into the media item. */
+  public long customStartTime = 0;
+
   /** Optional playback properties. May be {@code null} if shared over process boundaries. */
   @Nullable public final PlaybackProperties playbackProperties;
 

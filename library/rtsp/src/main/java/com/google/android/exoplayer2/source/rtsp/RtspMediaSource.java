@@ -259,7 +259,8 @@ public final class RtspMediaSource extends BaseMediaSource {
           timelineIsPlaceholder = false;
           notifySourceInfoRefreshed();
         },
-        userAgent);
+        userAgent,
+        this.mediaItem.customStartTime);
   }
 
   @Override

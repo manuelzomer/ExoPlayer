@@ -83,7 +83,8 @@ public final class RtspMediaPeriodTest {
             new TransferRtpDataChannelFactory(DEFAULT_TIMEOUT_MS),
             RtspTestUtils.getTestUri(rtspServer.startAndGetPortNumber()),
             /* listener= */ timing -> refreshedSourceDurationMs.set(timing.getDurationMs()),
-            /* userAgent= */ "ExoPlayer:RtspPeriodTest");
+            /* userAgent= */ "ExoPlayer:RtspPeriodTest",
+            /* customStartTime= */ 0);
 
     mediaPeriod.prepare(
         new MediaPeriod.Callback() {

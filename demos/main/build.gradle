@@ -84,7 +84,7 @@ dependencies {
     withDecoderExtensionsImplementation project(modulePrefix + 'extension-flac')
     withDecoderExtensionsImplementation project(modulePrefix + 'extension-opus')
     withDecoderExtensionsImplementation project(modulePrefix + 'extension-vp9')
-    withDecoderExtensionsImplementation project(modulePrefix + 'extension-rtmp')
+    //withDecoderExtensionsImplementation project(modulePrefix + 'extension-rtmp')
 }
 
 apply plugin: 'com.google.android.gms.strict-version-matcher-plugin'
